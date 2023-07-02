@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+	    <title>Gafanhotos Imobiliária</title>
+	    <meta charset="UTF-8">
+	<head>
+	          
+	<body>
+	
+		<h1><!doctype html>
+<html lang="pt-br">
+
+
+	
+	
+	
+	<style>
+	body{
+	background-image: url("imagens/ParqueGlobaltImperial.JPG");
+	
+	width: 100vm;
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-color: gray;
+	background-size: 100% auto;
+	margin:0 cover;
+	background-attachment: fixed;
+	background-position:left ;	
+
+	}
+	</style>	
+	
+	          
+	<body>
+		<h1>Cadastro Imobiliário</h1>
+	<form	action="gravarDados.php"
+			method="post"
+			enctype="multipart/form-data">
+
+		Nome: <input type="text" name="nome" maxlength="85" placeholder="Cliente"> <br>
+		
+		Email: <input type="email" name="email" maxlength="85" placeholder="@"> <br>
+		
+		Telefone: <input type="text" name="tel" maxlength="16" placeholder=""> <br>
+
+		Tipo do Imóvel:
+		<select name="tipodoImóvel">
+			<option value="">Escolha</option>
+			<option value="C">Casa</option>
+			<option value="A">Apartamento</option>
+			<option value="SC">Sala Comercial</option>
+			<option value="T">Terreno</option>
+			<option value="O">Outros</option>
+		</select> <br>
+
+		
+			<label>Tipo de Operação</label>
+			<input type="radio" name="TipodeOperação" value="V" checked>Venda
+			<input type="radio" name="TipodeOperação" values="A">Aluguel
+		  <br>
+
+
+		Número e local do registro da Escritura: <input type="text" name="dono" maxlength="120" required><br>
+		
+		Data da Escritura <input type="date" name="DatadaEscritura:" value="2022-09-27" min="2000-01-01" max="2025-12-31"><br>
+		
+		Valor Pretendido:  </label>
+     <input type="number" id="valor" name="valor"  min="1" max="99999.99" step="0.001" 
+	 placeholder="Insira o valor aqui">
+
+		
+		<input type="checkbox" value="Sim" name="desocupado" checked>O Imóvel está desocupado ?<br>
+
+        
+        Foto da propriedade(Mínimo duas fotos): <input type="file" name="foto"><br>
+
+       
+
+        Descrição do Imóvel:<br>
+        <textarea name="Descrição" cols="70" rows="12"></textarea>   <br> 
+        
+
+        <input type="submit" value="Cadastrar Dados">
+        <input type="reset" value="Limpar Campos">
+		
+
+
+
+</html>   
+
+
+
+
